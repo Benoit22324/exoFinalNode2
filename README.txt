@@ -31,7 +31,7 @@ N'oubliez pas de mettre dans votre .env, les variables suivantes: PORT, DATABASE
     /:id            [DELETE]    Delete a Specific Quiz
 
 /part
-    /:id/:index     [GET]       Get a Specific Quiz Part
+    /:quizId/:index     [GET]       Get a Specific Quiz Part
     /:quizId        [POST]      Add a Quiz Part
     /:id            [PUT]       Update a Specific Quiz Part
     /:id            [DELETE]    Delete a Specific Quiz Part
