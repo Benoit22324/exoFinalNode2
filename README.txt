@@ -1,4 +1,4 @@
-## Pour avoir le projet en local
+Pour avoir le projet en local
 
 1. git clone https://github.com/Benoit22324/exoFinalNode2.git
 
@@ -6,7 +6,8 @@
 
 3. npm run dev
 
-## Pour avoir la bdd en local
+- - - - - - - - - - - - - - - - - - 
+Pour avoir la bdd en local
 
 1. npm run generate
 
