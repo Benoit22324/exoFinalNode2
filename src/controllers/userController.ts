@@ -47,11 +47,11 @@ export const updateUser = async (req: Request, res: Response) => {
 
 export const deleteUser = async (req: Request, res: Response) => {
     try {
-        const { id } = req.params;
+        const { user } = res.locals;
 
         logger.info("Suppession de l'utilisateur...");
 
-        await userModel.delete(id);
+        await userModel.delete(user.id);
 
         return apiResponse(res, null, "Suppession avec succès");
     } catch (err: any) {
