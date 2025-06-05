@@ -1,0 +1,1 @@
+ALTER TABLE "quizs" ALTER COLUMN "difficulty" SET DATA TYPE varchar(255);

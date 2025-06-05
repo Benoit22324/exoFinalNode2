@@ -1,0 +1,6 @@
+export * from "./quizController"
+export * from "./partController"
+export * from "./userController"
+export * from "./authController"
+export * from "./commentController"
+export * from "./runController"

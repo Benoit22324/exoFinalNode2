@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const middlewares_1 = require("../middlewares");
+const controllers_1 = require("../controllers");
+const runRouter = (0, express_1.Router)();
+runRouter.get("/:id", controllers_1.getRun);
+runRouter.post("/", middlewares_1.isAuthenticated, controllers_1.addRun);
+runRouter.put("/:id", middlewares_1.isAuthenticated, controllers_1.updateRun);
+runRouter.delete("/:id", middlewares_1.isAuthenticated, controllers_1.deleteRun);
+exports.default = runRouter;
